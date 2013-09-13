@@ -1,0 +1,2 @@
+serviceClass: com.KeepingItSimpleApps.statscalculator.client.StatsService
+path: 53970E61910B0981CFAFF9C6747E0422.gwt.rpc

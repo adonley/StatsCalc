@@ -13,7 +13,7 @@
   
   <servlet-mapping>
   	<servlet-name>statsCalc</servlet-name>
-  	<url-pattern>/Stats_Calculator/stats</url-pattern>
+  	<url-pattern>/stats_calculator/stats</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->
