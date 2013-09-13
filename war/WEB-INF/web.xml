@@ -6,6 +6,15 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
+  <servlet>
+  	<servlet-name>statsCalc</servlet-name>
+  	<servlet-class>com.KeepingItSimpleApps.statscalculator.server.StatsServiceServerImplementation</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>statsCalc</servlet-name>
+  	<url-pattern>/Stats_Calculator/stats</url-pattern>
+  </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>

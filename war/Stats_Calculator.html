@@ -1,36 +1,13 @@
-<!doctype html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
+<!DOCTYPE HTML>
 
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-    <!--                                                               -->
-    <!-- Consider inlining CSS to reduce the number of requested files -->
-    <!--                                                               -->
-    <link type="text/css" rel="stylesheet" href="Stats_Calculator.css">
-
-    <!--                                           -->
-    <!-- Any title is fine                         -->
-    <!--                                           -->
-    <title>Web Application Starter Project</title>
-    
-    <!--                                           -->
-    <!-- This script loads your compiled module.   -->
-    <!-- If you add any GWT meta tags, they must   -->
-    <!-- be added before this line.                -->
-    <!--                                           -->
-    <script type="text/javascript" language="javascript" src="stats_calculator/stats_calculator.nocache.js"></script>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Standard Deviation and Variance Calculator</title>
+    <script type="text/javascript" src="stats_calculator/stats_calculator.nocache.js"></script>
   </head>
-
-  <!--                                           -->
-  <!-- The body can have arbitrary html, or      -->
-  <!-- you can leave the body empty if you want  -->
-  <!-- to create a completely dynamic UI.        -->
-  <!--                                           -->
+  
   <body>
 
     <!-- OPTIONAL: include this if you want history support -->
@@ -43,20 +20,19 @@
         in order for this application to display correctly.
       </div>
     </noscript>
-
-    <h1>Web Application Starter Project</h1>
-
-    <table align="center">
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
-      </tr>
-      <tr>
-        <td id="nameFieldContainer"></td>
-        <td id="sendButtonContainer"></td>
-      </tr>
-      <tr>
-        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
-      </tr>
-    </table>
+	<div class="page-header">
+    	<h1>
+    		Standard Deviation and Variance Calculator
+    		<br><small id="titleIcon">Hurricane Electric Internet Services</small>
+    	</h1>
+    </div>
+    <div id="statsForm"></div>
+    <div id="results"></div>
+    
+    <!-- Bootstrap Core -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<!-- End Bootstrap Core -->
+    
   </body>
 </html>
