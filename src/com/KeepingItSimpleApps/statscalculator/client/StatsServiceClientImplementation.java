@@ -12,7 +12,7 @@ public class StatsServiceClientImplementation {
 	private MainGUI mainGUI;
 
 	public StatsServiceClientImplementation(String url) {
-		System.out.println("URL: " + url);
+		//System.out.println("URL: " + url);
 		this.service = GWT.create(StatsService.class);
 		ServiceDefTarget endpoint = (ServiceDefTarget) this.service;
 		endpoint.setServiceEntryPoint(url);

@@ -1,6 +1,7 @@
 package com.KeepingItSimpleApps.statscalculator.client.GUI;
 
 import com.KeepingItSimpleApps.statscalculator.client.StatsServiceClientImplementation;
+import com.google.gwt.dom.client.Document;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
@@ -17,12 +18,16 @@ public class StatsForm extends Composite {
 	
 	public StatsForm(StatsServiceClientImplementation serviceImpl) {
 		
+		com.google.gwt.dom.client.Element matrixDiv = Document.get().getElementById("statsForm");
+		String clientWidth = Math.floor((matrixDiv.getClientWidth()) * .8) + "px";
+		String clientHeight = Math.floor((matrixDiv.getClientWidth()) * .3) + "px";
+		
 		this.serviceImpl = serviceImpl;
 		
 		input = new TextArea();
-		input.setWidth("300px");
-		input.setHeight("200px");
-		input.setStyleName("resize:none;", true);
+		input.setWidth(clientWidth);
+		input.setHeight(clientHeight);
+		input.setStylePrimaryName("resize:none;");
 		
 		calculate = new Button("Calculate");
 		calculate.addClickHandler(new CalculateHandler());

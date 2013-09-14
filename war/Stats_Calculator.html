@@ -10,6 +10,11 @@
   
   <body>
 
+    <!-- Bootstrap Core -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<!-- End Bootstrap Core -->
+
     <!-- OPTIONAL: include this if you want history support -->
     <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
     
@@ -20,18 +25,18 @@
         in order for this application to display correctly.
       </div>
     </noscript>
-	<div class="page-header">
-    	<h1>
-    		Standard Deviation and Variance Calculator
-    		<br><small id="titleIcon">Hurricane Electric Internet Services</small>
-    	</h1>
+    <img src="./Images/helogo.gif"><hr>
+    <h1 style="margin:0px,0px,10px,0px;">Standard Deviation and Variance Calculator</h1>
+    <div class="row">
+    	<div class="col-md-3">
+    		<div class="well well-lg" style="font-size:130%;"><div style="font-size:150%;">Directions:</div><hr>Enter in numbers into the box provided using spaces, commas, and new-lines
+    		to separate the numbers as desired. Enter in as many numbers as you would like.</div>
+    	</div>
+    	<div class="col-md-9" id="statsForm">
+    		<!-- <h3 style="margin:0px;">Enter Numbers:</h3> -->
+    	</div>
     </div>
-    <div id="statsForm"></div>
-    
-    <!-- Bootstrap Core -->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="./bootstrap/js/bootstrap.min.js"></script>
-	<!-- End Bootstrap Core -->
+
     
   </body>
 </html>

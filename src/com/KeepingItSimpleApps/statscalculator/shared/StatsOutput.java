@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class StatsOutput implements Serializable {
 
 	private static final long serialVersionUID = -1215105258909870567L;
-	private double numberOfNums;
+	private int numberOfNums;
 	private double average;
 	private double sampVar;
 	private double popVar;
@@ -51,10 +51,10 @@ public class StatsOutput implements Serializable {
 	public void setAverage(double average) {
 		this.average = average;
 	}
-	public double getNumberOfNums() {
+	public int getNumberOfNums() {
 		return numberOfNums;
 	}
-	public void setNumberOfNums(double numberOfNums) {
+	public void setNumberOfNums(int numberOfNums) {
 		this.numberOfNums = numberOfNums;
 	}
 	

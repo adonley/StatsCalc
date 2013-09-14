@@ -12,10 +12,9 @@ public class Parser {
 		int i = 0;
 		LinkedList<Double> values = new LinkedList<Double>();
 		
+		input = input.replace(","," ");
+		input = input.replaceAll(" {2,}"," ");
 		Scanner s = new Scanner(input);
-		//.useDelimiter(",");
-		input.replaceAll(","," ");
-		input.replaceAll("  ", " ");
 		
 		while(s.hasNextDouble()) {
 			values.add(new Double(s.nextDouble()));
