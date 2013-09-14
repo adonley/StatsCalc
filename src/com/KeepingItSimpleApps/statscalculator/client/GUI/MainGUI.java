@@ -1,6 +1,7 @@
 package com.KeepingItSimpleApps.statscalculator.client.GUI;
 
 import com.KeepingItSimpleApps.statscalculator.client.StatsServiceClientImplementation;
+import com.KeepingItSimpleApps.statscalculator.shared.StatsOutput;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
@@ -27,6 +28,6 @@ public class MainGUI extends Composite {
 		
 	}
 	
-	public void updateOutput(String text) { output.updateOutput(text); }
+	public void updateOutput(StatsOutput text) { output.updateOutput(text); }
 	
 }
